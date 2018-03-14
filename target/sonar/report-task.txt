@@ -1,0 +1,6 @@
+projectKey=com.ssm.maven.core:ssm-maven
+serverUrl=http://localhost:9000
+serverVersion=7.0.0.36138
+dashboardUrl=http://localhost:9000/dashboard/index/com.ssm.maven.core:ssm-maven
+ceTaskId=AWINgAS4RtzniP3Htmnb
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWINgAS4RtzniP3Htmnb

@@ -1,0 +1,345 @@
+[00:11:26] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/UserDao.class]
+[00:11:26] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/PictureDao.class]
+[00:11:26] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/ArticleDao.class]
+[00:11:26] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/BookDao.class]
+[00:11:26] ClassPathMapperScanner - Creating MapperFactoryBean with name 'userDao' and 'com.ssm.maven.core.dao.UserDao' mapperInterface
+[00:11:26] ClassPathMapperScanner - Creating MapperFactoryBean with name 'pictureDao' and 'com.ssm.maven.core.dao.PictureDao' mapperInterface
+[00:11:26] ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleDao' and 'com.ssm.maven.core.dao.ArticleDao' mapperInterface
+[00:11:26] ClassPathMapperScanner - Creating MapperFactoryBean with name 'bookDao' and 'com.ssm.maven.core.dao.BookDao' mapperInterface
+[00:11:28] DruidDataSource - {dataSource-1} inited
+[00:11:28] SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[00:11:28] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/BookMapper.xml]'
+[00:11:28] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/UserMapper.xml]'
+[00:11:28] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/PictureMapper.xml]'
+[00:11:28] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/ArticleMapper.xml]'
+[00:11:29] UserController - save begin:User [id=null, userName=英, password=3333, roleName=null]
+[00:11:29] SqlSessionUtils - Creating a new SqlSession
+[00:11:29] SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293bb8a5]
+[00:11:29] SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@114a85c2] will be managed by Spring
+[00:11:29] getTotalUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@114a85c2]
+[00:11:29] getTotalUser - ==>  Preparing: select count(*) from ssm_user 
+[00:11:29] getTotalUser - ==> Parameters: 
+[00:11:29] getTotalUser - <==      Total: 1
+[00:11:29] PreparedStatementPool - {conn-10010, pstmt-20010} enter cache
+[00:11:29] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293bb8a5]
+[00:11:29] SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293bb8a5] from current transaction
+[00:11:29] addUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@114a85c2]
+[00:11:29] addUser - ==>  Preparing: insert into ssm_user(user_name,password) values(?,?) 
+[00:11:29] addUser - ==> Parameters: 英(String), 2be9bd7a3434f7038ca27d1918de58bd(String)
+[00:11:29] addUser - <==    Updates: 1
+[00:11:29] PreparedStatementPool - {conn-10010, pstmt-20011} enter cache
+[00:11:29] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293bb8a5]
+[00:11:29] SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293bb8a5]
+[00:11:29] SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293bb8a5]
+[00:11:29] SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293bb8a5]
+[00:11:29] PreparedStatementPool - {conn-10010, pstmt-20010} exit cache
+[00:11:29] PreparedStatementPool - {conn-10010, pstmt-20011} exit cache
+[00:11:29] DruidDataSource - {dataSource-1} closed
+[00:12:57] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/UserDao.class]
+[00:12:57] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/PictureDao.class]
+[00:12:57] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/ArticleDao.class]
+[00:12:57] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/BookDao.class]
+[00:12:57] ClassPathMapperScanner - Creating MapperFactoryBean with name 'userDao' and 'com.ssm.maven.core.dao.UserDao' mapperInterface
+[00:12:57] ClassPathMapperScanner - Creating MapperFactoryBean with name 'pictureDao' and 'com.ssm.maven.core.dao.PictureDao' mapperInterface
+[00:12:57] ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleDao' and 'com.ssm.maven.core.dao.ArticleDao' mapperInterface
+[00:12:57] ClassPathMapperScanner - Creating MapperFactoryBean with name 'bookDao' and 'com.ssm.maven.core.dao.BookDao' mapperInterface
+[00:12:58] DruidDataSource - {dataSource-1} inited
+[00:12:58] SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[00:12:58] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/BookMapper.xml]'
+[00:12:58] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/UserMapper.xml]'
+[00:12:58] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/PictureMapper.xml]'
+[00:12:59] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/ArticleMapper.xml]'
+[00:12:59] SqlSessionUtils - Creating a new SqlSession
+[00:12:59] SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f7a7219]
+[00:12:59] SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@7de0c6ae] will be managed by Spring
+[00:12:59] findBooks - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@7de0c6ae]
+[00:12:59] findBooks - ==>  Preparing: select id,isbn,path,title,subtitle,market_price,pages,author,publisher,binding,hot,status,supply from ssm_book ORDER BY id desc 
+[00:12:59] findBooks - ==> Parameters: 
+[00:13:00] findBooks - <==      Total: 505
+[00:13:00] PreparedStatementPool - {conn-10010, pstmt-20010} enter cache
+[00:13:00] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f7a7219]
+[00:13:00] SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f7a7219]
+[00:13:00] SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f7a7219]
+[00:13:00] SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f7a7219]
+[00:13:00] SqlSessionUtils - Creating a new SqlSession
+[00:13:00] SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a138fc5]
+[00:13:00] SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@7de0c6ae] will be managed by Spring
+[00:13:00] getTotalBooks - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@7de0c6ae]
+[00:13:00] getTotalBooks - ==>  Preparing: select count(*) from ssm_book 
+[00:13:00] getTotalBooks - ==> Parameters: 
+[00:13:00] getTotalBooks - <==      Total: 1
+[00:13:00] PreparedStatementPool - {conn-10010, pstmt-20011} enter cache
+[00:13:00] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a138fc5]
+[00:13:00] SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a138fc5]
+[00:13:00] SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a138fc5]
+[00:13:00] SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a138fc5]
+[00:13:00] BookController - request: book/listAll , map: {}
+[00:13:00] PreparedStatementPool - {conn-10010, pstmt-20010} exit cache
+[00:13:00] PreparedStatementPool - {conn-10010, pstmt-20011} exit cache
+[00:13:00] DruidDataSource - {dataSource-1} closed
+[00:14:29] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/UserDao.class]
+[00:14:29] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/PictureDao.class]
+[00:14:29] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/ArticleDao.class]
+[00:14:29] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/BookDao.class]
+[00:14:29] ClassPathMapperScanner - Creating MapperFactoryBean with name 'userDao' and 'com.ssm.maven.core.dao.UserDao' mapperInterface
+[00:14:29] ClassPathMapperScanner - Creating MapperFactoryBean with name 'pictureDao' and 'com.ssm.maven.core.dao.PictureDao' mapperInterface
+[00:14:29] ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleDao' and 'com.ssm.maven.core.dao.ArticleDao' mapperInterface
+[00:14:29] ClassPathMapperScanner - Creating MapperFactoryBean with name 'bookDao' and 'com.ssm.maven.core.dao.BookDao' mapperInterface
+[00:14:30] DruidDataSource - {dataSource-1} inited
+[00:14:30] SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[00:14:31] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/BookMapper.xml]'
+[00:14:31] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/UserMapper.xml]'
+[00:14:31] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/PictureMapper.xml]'
+[00:14:31] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/ArticleMapper.xml]'
+[00:14:31] UserController - save begin:User [id=null, userName=英, password=3333, roleName=null]
+[00:14:31] SqlSessionUtils - Creating a new SqlSession
+[00:14:31] SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293bb8a5]
+[00:14:31] SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@114a85c2] will be managed by Spring
+[00:14:31] getTotalUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@114a85c2]
+[00:14:31] getTotalUser - ==>  Preparing: select count(*) from ssm_user 
+[00:14:31] getTotalUser - ==> Parameters: 
+[00:14:31] getTotalUser - <==      Total: 1
+[00:14:31] PreparedStatementPool - {conn-10010, pstmt-20010} enter cache
+[00:14:31] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293bb8a5]
+[00:14:31] SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293bb8a5] from current transaction
+[00:14:31] addUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@114a85c2]
+[00:14:31] addUser - ==>  Preparing: insert into ssm_user(user_name,password) values(?,?) 
+[00:14:31] addUser - ==> Parameters: 英(String), 2be9bd7a3434f7038ca27d1918de58bd(String)
+[00:14:31] addUser - <==    Updates: 1
+[00:14:31] PreparedStatementPool - {conn-10010, pstmt-20011} enter cache
+[00:14:31] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293bb8a5]
+[00:14:31] UserController - save end:User [id=null, userName=英, password=2be9bd7a3434f7038ca27d1918de58bd, roleName=null]
+[00:14:32] SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293bb8a5]
+[00:14:32] SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293bb8a5]
+[00:14:32] SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293bb8a5]
+[00:14:32] PreparedStatementPool - {conn-10010, pstmt-20010} exit cache
+[00:14:32] PreparedStatementPool - {conn-10010, pstmt-20011} exit cache
+[00:14:32] DruidDataSource - {dataSource-1} closed
+[00:17:20] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/UserDao.class]
+[00:17:20] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/PictureDao.class]
+[00:17:20] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/ArticleDao.class]
+[00:17:20] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/BookDao.class]
+[00:17:20] ClassPathMapperScanner - Creating MapperFactoryBean with name 'userDao' and 'com.ssm.maven.core.dao.UserDao' mapperInterface
+[00:17:20] ClassPathMapperScanner - Creating MapperFactoryBean with name 'pictureDao' and 'com.ssm.maven.core.dao.PictureDao' mapperInterface
+[00:17:20] ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleDao' and 'com.ssm.maven.core.dao.ArticleDao' mapperInterface
+[00:17:20] ClassPathMapperScanner - Creating MapperFactoryBean with name 'bookDao' and 'com.ssm.maven.core.dao.BookDao' mapperInterface
+[00:17:22] DruidDataSource - {dataSource-1} inited
+[00:17:22] SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[00:17:22] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/BookMapper.xml]'
+[00:17:22] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/UserMapper.xml]'
+[00:17:22] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/PictureMapper.xml]'
+[00:17:22] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/ArticleMapper.xml]'
+[00:17:23] UserController - save begin:User [id=null, userName=英, password=3333, roleName=null]
+[00:17:23] SqlSessionUtils - Creating a new SqlSession
+[00:17:23] SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c177f9e]
+[00:17:23] SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@3b9d6699] will be managed by Spring
+[00:17:23] getTotalUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@3b9d6699]
+[00:17:23] getTotalUser - ==>  Preparing: select count(*) from ssm_user 
+[00:17:23] getTotalUser - ==> Parameters: 
+[00:17:23] getTotalUser - <==      Total: 1
+[00:17:23] PreparedStatementPool - {conn-10010, pstmt-20010} enter cache
+[00:17:23] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c177f9e]
+[00:17:23] SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c177f9e] from current transaction
+[00:17:23] addUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@3b9d6699]
+[00:17:23] addUser - ==>  Preparing: insert into ssm_user(user_name,password) values(?,?) 
+[00:17:23] addUser - ==> Parameters: 英(String), 2be9bd7a3434f7038ca27d1918de58bd(String)
+[00:17:23] addUser - <==    Updates: 1
+[00:17:23] PreparedStatementPool - {conn-10010, pstmt-20011} enter cache
+[00:17:23] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c177f9e]
+[00:17:23] UserController - save end:User [id=null, userName=英, password=2be9bd7a3434f7038ca27d1918de58bd, roleName=null]
+[00:17:23] SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c177f9e]
+[00:17:23] SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c177f9e]
+[00:17:23] SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c177f9e]
+[00:17:23] PreparedStatementPool - {conn-10010, pstmt-20010} exit cache
+[00:17:23] PreparedStatementPool - {conn-10010, pstmt-20011} exit cache
+[00:17:23] DruidDataSource - {dataSource-1} closed
+[00:25:57] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/UserDao.class]
+[00:25:57] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/PictureDao.class]
+[00:25:57] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/ArticleDao.class]
+[00:25:57] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/BookDao.class]
+[00:25:57] ClassPathMapperScanner - Creating MapperFactoryBean with name 'userDao' and 'com.ssm.maven.core.dao.UserDao' mapperInterface
+[00:25:57] ClassPathMapperScanner - Creating MapperFactoryBean with name 'pictureDao' and 'com.ssm.maven.core.dao.PictureDao' mapperInterface
+[00:25:57] ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleDao' and 'com.ssm.maven.core.dao.ArticleDao' mapperInterface
+[00:25:57] ClassPathMapperScanner - Creating MapperFactoryBean with name 'bookDao' and 'com.ssm.maven.core.dao.BookDao' mapperInterface
+[00:25:58] DruidDataSource - {dataSource-1} inited
+[00:25:58] SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[00:25:59] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/BookMapper.xml]'
+[00:25:59] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/UserMapper.xml]'
+[00:25:59] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/PictureMapper.xml]'
+[00:25:59] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/ArticleMapper.xml]'
+[00:25:59] UserController - save begin:User [id=null, userName=英, password=3333, roleName=null]
+[00:25:59] SqlSessionUtils - Creating a new SqlSession
+[00:25:59] SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6fa590ba]
+[00:25:59] SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@cf65451] will be managed by Spring
+[00:25:59] getTotalUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@cf65451]
+[00:25:59] getTotalUser - ==>  Preparing: select count(*) from ssm_user 
+[00:25:59] getTotalUser - ==> Parameters: 
+[00:25:59] getTotalUser - <==      Total: 1
+[00:25:59] PreparedStatementPool - {conn-10010, pstmt-20010} enter cache
+[00:25:59] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6fa590ba]
+[00:25:59] SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6fa590ba] from current transaction
+[00:25:59] addUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@cf65451]
+[00:25:59] addUser - ==>  Preparing: insert into ssm_user(user_name,password) values(?,?) 
+[00:25:59] addUser - ==> Parameters: 英(String), 2be9bd7a3434f7038ca27d1918de58bd(String)
+[00:25:59] addUser - <==    Updates: 1
+[00:25:59] PreparedStatementPool - {conn-10010, pstmt-20011} enter cache
+[00:25:59] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6fa590ba]
+[00:25:59] UserController - save end:User [id=95, userName=英, password=2be9bd7a3434f7038ca27d1918de58bd, roleName=null]
+[00:26:00] SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6fa590ba]
+[00:26:00] SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6fa590ba]
+[00:26:00] SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6fa590ba]
+[00:26:00] PreparedStatementPool - {conn-10010, pstmt-20010} exit cache
+[00:26:00] PreparedStatementPool - {conn-10010, pstmt-20011} exit cache
+[00:26:00] DruidDataSource - {dataSource-1} closed
+[00:30:51] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/UserDao.class]
+[00:30:51] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/PictureDao.class]
+[00:30:51] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/ArticleDao.class]
+[00:30:51] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/BookDao.class]
+[00:30:51] ClassPathMapperScanner - Creating MapperFactoryBean with name 'userDao' and 'com.ssm.maven.core.dao.UserDao' mapperInterface
+[00:30:51] ClassPathMapperScanner - Creating MapperFactoryBean with name 'pictureDao' and 'com.ssm.maven.core.dao.PictureDao' mapperInterface
+[00:30:51] ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleDao' and 'com.ssm.maven.core.dao.ArticleDao' mapperInterface
+[00:30:51] ClassPathMapperScanner - Creating MapperFactoryBean with name 'bookDao' and 'com.ssm.maven.core.dao.BookDao' mapperInterface
+[00:30:53] DruidDataSource - {dataSource-1} inited
+[00:30:53] SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[00:30:53] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/BookMapper.xml]'
+[00:30:53] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/UserMapper.xml]'
+[00:30:53] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/PictureMapper.xml]'
+[00:30:53] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/ArticleMapper.xml]'
+[00:30:54] UserController - save begin:User [id=null, userName=英, password=3333, roleName=null]
+[00:30:54] SqlSessionUtils - Creating a new SqlSession
+[00:30:54] SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72e34f77]
+[00:30:54] SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@37eeec90] will be managed by Spring
+[00:30:54] getTotalUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@37eeec90]
+[00:30:54] getTotalUser - ==>  Preparing: select count(*) from ssm_user 
+[00:30:54] getTotalUser - ==> Parameters: 
+[00:30:54] getTotalUser - <==      Total: 1
+[00:30:54] PreparedStatementPool - {conn-10010, pstmt-20010} enter cache
+[00:30:54] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72e34f77]
+[00:30:54] SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72e34f77] from current transaction
+[00:30:54] addUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@37eeec90]
+[00:30:54] addUser - ==>  Preparing: insert into ssm_user(user_name,password) values(?,?) 
+[00:30:54] addUser - ==> Parameters: 英(String), 2be9bd7a3434f7038ca27d1918de58bd(String)
+[00:30:54] addUser - <==    Updates: 1
+[00:30:54] PreparedStatementPool - {conn-10010, pstmt-20011} enter cache
+[00:30:54] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72e34f77]
+[00:30:54] UserController - save end:User [id=96, userName=英, password=2be9bd7a3434f7038ca27d1918de58bd, roleName=null]
+[00:30:54] SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72e34f77]
+[00:30:54] SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72e34f77]
+[00:30:54] SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72e34f77]
+[00:30:54] PreparedStatementPool - {conn-10010, pstmt-20010} exit cache
+[00:30:54] PreparedStatementPool - {conn-10010, pstmt-20011} exit cache
+[00:30:54] DruidDataSource - {dataSource-1} closed
+[00:32:24] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/UserDao.class]
+[00:32:24] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/PictureDao.class]
+[00:32:24] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/ArticleDao.class]
+[00:32:24] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/BookDao.class]
+[00:32:24] ClassPathMapperScanner - Creating MapperFactoryBean with name 'userDao' and 'com.ssm.maven.core.dao.UserDao' mapperInterface
+[00:32:24] ClassPathMapperScanner - Creating MapperFactoryBean with name 'pictureDao' and 'com.ssm.maven.core.dao.PictureDao' mapperInterface
+[00:32:24] ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleDao' and 'com.ssm.maven.core.dao.ArticleDao' mapperInterface
+[00:32:24] ClassPathMapperScanner - Creating MapperFactoryBean with name 'bookDao' and 'com.ssm.maven.core.dao.BookDao' mapperInterface
+[00:32:26] DruidDataSource - {dataSource-1} inited
+[00:32:26] SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[00:32:26] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/BookMapper.xml]'
+[00:32:26] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/UserMapper.xml]'
+[00:32:26] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/PictureMapper.xml]'
+[00:32:26] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/ArticleMapper.xml]'
+[00:32:27] UserController - save begin:User [id=null, userName=英, password=3333, roleName=null]
+[00:32:27] SqlSessionUtils - Creating a new SqlSession
+[00:32:27] SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72e34f77]
+[00:32:27] SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@37eeec90] will be managed by Spring
+[00:32:27] getTotalUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@37eeec90]
+[00:32:27] getTotalUser - ==>  Preparing: select count(*) from ssm_user 
+[00:32:27] getTotalUser - ==> Parameters: 
+[00:32:27] getTotalUser - <==      Total: 1
+[00:32:27] PreparedStatementPool - {conn-10010, pstmt-20010} enter cache
+[00:32:27] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72e34f77]
+[00:32:27] SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72e34f77] from current transaction
+[00:32:27] addUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@37eeec90]
+[00:32:27] addUser - ==>  Preparing: insert into ssm_user(user_name,password) values(?,?) 
+[00:32:27] addUser - ==> Parameters: 英(String), 2be9bd7a3434f7038ca27d1918de58bd(String)
+[00:32:27] addUser - <==    Updates: 1
+[00:32:27] PreparedStatementPool - {conn-10010, pstmt-20011} enter cache
+[00:32:27] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72e34f77]
+[00:32:27] UserController - save end:User [id=97, userName=英, password=2be9bd7a3434f7038ca27d1918de58bd, roleName=null]
+[00:32:27] SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72e34f77]
+[00:32:27] SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72e34f77]
+[00:32:27] SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72e34f77]
+[00:32:27] PreparedStatementPool - {conn-10010, pstmt-20010} exit cache
+[00:32:27] PreparedStatementPool - {conn-10010, pstmt-20011} exit cache
+[00:32:27] DruidDataSource - {dataSource-1} closed
+[13:47:49] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/UserDao.class]
+[13:47:49] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/PictureDao.class]
+[13:47:49] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/ArticleDao.class]
+[13:47:49] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/BookDao.class]
+[13:47:49] ClassPathMapperScanner - Creating MapperFactoryBean with name 'userDao' and 'com.ssm.maven.core.dao.UserDao' mapperInterface
+[13:47:49] ClassPathMapperScanner - Creating MapperFactoryBean with name 'pictureDao' and 'com.ssm.maven.core.dao.PictureDao' mapperInterface
+[13:47:49] ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleDao' and 'com.ssm.maven.core.dao.ArticleDao' mapperInterface
+[13:47:49] ClassPathMapperScanner - Creating MapperFactoryBean with name 'bookDao' and 'com.ssm.maven.core.dao.BookDao' mapperInterface
+[13:47:52] DruidDataSource - {dataSource-1} inited
+[13:47:52] SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[13:47:52] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/BookMapper.xml]'
+[13:47:52] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/UserMapper.xml]'
+[13:47:52] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/PictureMapper.xml]'
+[13:47:52] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/ArticleMapper.xml]'
+[13:47:53] UserController - save begin:User [id=null, userName=英, password=3333, roleName=null]
+[13:47:53] SqlSessionUtils - Creating a new SqlSession
+[13:47:53] SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8a589a2]
+[13:47:53] SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@6ea1bcdc] will be managed by Spring
+[13:47:53] getTotalUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@6ea1bcdc]
+[13:47:53] getTotalUser - ==>  Preparing: select count(*) from ssm_user 
+[13:47:54] getTotalUser - ==> Parameters: 
+[13:47:54] getTotalUser - <==      Total: 1
+[13:47:54] PreparedStatementPool - {conn-10010, pstmt-20010} enter cache
+[13:47:54] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8a589a2]
+[13:47:54] SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8a589a2] from current transaction
+[13:47:54] addUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@6ea1bcdc]
+[13:47:54] addUser - ==>  Preparing: insert into ssm_user(user_name,password) values(?,?) 
+[13:47:54] addUser - ==> Parameters: 英(String), 2be9bd7a3434f7038ca27d1918de58bd(String)
+[13:47:54] addUser - <==    Updates: 1
+[13:47:54] PreparedStatementPool - {conn-10010, pstmt-20011} enter cache
+[13:47:54] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8a589a2]
+[13:47:54] UserController - save end:User [id=98, userName=英, password=2be9bd7a3434f7038ca27d1918de58bd, roleName=null]
+[13:47:54] SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8a589a2]
+[13:47:54] SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8a589a2]
+[13:47:54] SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8a589a2]
+[13:47:54] PreparedStatementPool - {conn-10010, pstmt-20010} exit cache
+[13:47:54] PreparedStatementPool - {conn-10010, pstmt-20011} exit cache
+[13:47:54] DruidDataSource - {dataSource-1} closed
+[13:50:17] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/UserDao.class]
+[13:50:17] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/PictureDao.class]
+[13:50:17] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/ArticleDao.class]
+[13:50:17] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/BookDao.class]
+[13:50:17] ClassPathMapperScanner - Creating MapperFactoryBean with name 'userDao' and 'com.ssm.maven.core.dao.UserDao' mapperInterface
+[13:50:17] ClassPathMapperScanner - Creating MapperFactoryBean with name 'pictureDao' and 'com.ssm.maven.core.dao.PictureDao' mapperInterface
+[13:50:17] ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleDao' and 'com.ssm.maven.core.dao.ArticleDao' mapperInterface
+[13:50:17] ClassPathMapperScanner - Creating MapperFactoryBean with name 'bookDao' and 'com.ssm.maven.core.dao.BookDao' mapperInterface
+[13:50:18] DruidDataSource - {dataSource-1} inited
+[13:50:18] SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[13:50:19] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/BookMapper.xml]'
+[13:50:19] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/UserMapper.xml]'
+[13:50:19] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/PictureMapper.xml]'
+[13:50:19] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/ArticleMapper.xml]'
+[13:50:20] UserController - save begin:User [id=null, userName=英, password=3333, roleName=null]
+[13:50:20] SqlSessionUtils - Creating a new SqlSession
+[13:50:20] SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bc9e6ab]
+[13:50:20] SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@73d69c0f] will be managed by Spring
+[13:50:20] getTotalUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@73d69c0f]
+[13:50:20] getTotalUser - ==>  Preparing: select count(*) from ssm_user 
+[13:50:20] getTotalUser - ==> Parameters: 
+[13:50:20] getTotalUser - <==      Total: 1
+[13:50:20] PreparedStatementPool - {conn-10010, pstmt-20010} enter cache
+[13:50:20] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bc9e6ab]
+[13:50:20] SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bc9e6ab] from current transaction
+[13:50:20] addUser - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@73d69c0f]
+[13:50:20] addUser - ==>  Preparing: insert into ssm_user(user_name,password) values(?,?) 
+[13:50:20] addUser - ==> Parameters: 英(String), 2be9bd7a3434f7038ca27d1918de58bd(String)
+[13:50:21] addUser - <==    Updates: 1
+[13:50:21] PreparedStatementPool - {conn-10010, pstmt-20011} enter cache
+[13:50:21] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bc9e6ab]
+[13:50:21] UserController - save end:User [id=99, userName=英, password=2be9bd7a3434f7038ca27d1918de58bd, roleName=null]
+[13:50:21] SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bc9e6ab]
+[13:50:21] SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bc9e6ab]
+[13:50:21] SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bc9e6ab]
+[13:50:21] PreparedStatementPool - {conn-10010, pstmt-20010} exit cache
+[13:50:21] PreparedStatementPool - {conn-10010, pstmt-20011} exit cache
+[13:50:21] DruidDataSource - {dataSource-1} closed

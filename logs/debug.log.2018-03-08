@@ -1,0 +1,42 @@
+[23:55:00] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/UserDao.class]
+[23:55:00] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/PictureDao.class]
+[23:55:00] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/ArticleDao.class]
+[23:55:00] ClassPathMapperScanner - Identified candidate component class: file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/com/ssm/maven/core/dao/BookDao.class]
+[23:55:00] ClassPathMapperScanner - Creating MapperFactoryBean with name 'userDao' and 'com.ssm.maven.core.dao.UserDao' mapperInterface
+[23:55:00] ClassPathMapperScanner - Creating MapperFactoryBean with name 'pictureDao' and 'com.ssm.maven.core.dao.PictureDao' mapperInterface
+[23:55:00] ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleDao' and 'com.ssm.maven.core.dao.ArticleDao' mapperInterface
+[23:55:00] ClassPathMapperScanner - Creating MapperFactoryBean with name 'bookDao' and 'com.ssm.maven.core.dao.BookDao' mapperInterface
+[23:55:02] DruidDataSource - {dataSource-1} inited
+[23:55:02] SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[23:55:02] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/BookMapper.xml]'
+[23:55:02] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/UserMapper.xml]'
+[23:55:02] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/PictureMapper.xml]'
+[23:55:02] SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liuxiaoying/git/ssm-demo/ssm-maven/target/classes/mappers/ArticleMapper.xml]'
+[23:55:03] SqlSessionUtils - Creating a new SqlSession
+[23:55:03] SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c041b41]
+[23:55:03] SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@a7e2d9d] will be managed by Spring
+[23:55:03] findBooks - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@a7e2d9d]
+[23:55:03] findBooks - ==>  Preparing: select id,isbn,path,title,subtitle,market_price,pages,author,publisher,binding,hot,status,supply from ssm_book ORDER BY id desc 
+[23:55:03] findBooks - ==> Parameters: 
+[23:55:03] findBooks - <==      Total: 505
+[23:55:03] PreparedStatementPool - {conn-10010, pstmt-20010} enter cache
+[23:55:03] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c041b41]
+[23:55:03] SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c041b41]
+[23:55:03] SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c041b41]
+[23:55:03] SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c041b41]
+[23:55:03] SqlSessionUtils - Creating a new SqlSession
+[23:55:03] SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19b30c92]
+[23:55:03] SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@a7e2d9d] will be managed by Spring
+[23:55:03] getTotalBooks - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@a7e2d9d]
+[23:55:03] getTotalBooks - ==>  Preparing: select count(*) from ssm_book 
+[23:55:03] getTotalBooks - ==> Parameters: 
+[23:55:03] getTotalBooks - <==      Total: 1
+[23:55:03] PreparedStatementPool - {conn-10010, pstmt-20011} enter cache
+[23:55:03] SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19b30c92]
+[23:55:03] SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19b30c92]
+[23:55:03] SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19b30c92]
+[23:55:03] SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19b30c92]
+[23:55:03] BookController - request: book/listAll , map: {}
+[23:55:03] PreparedStatementPool - {conn-10010, pstmt-20010} exit cache
+[23:55:03] PreparedStatementPool - {conn-10010, pstmt-20011} exit cache
+[23:55:03] DruidDataSource - {dataSource-1} closed
