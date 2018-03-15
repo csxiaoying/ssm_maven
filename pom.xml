@@ -287,6 +287,20 @@
 							<append>true</append>
 						</configuration>
 						<executions>
+			<execution>
+                        <id>jacoco-initialize</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>jacoco-site</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
 							<execution>
 								<id>agent-for-ut</id>
 								<goals>
@@ -301,7 +315,7 @@
 							</execution>
 							<execution>
 								<id>jacoco-site</id>
-								<phase>verify</phase>
+								<phase> verify</phase>
 								<goals>
 									<goal>report</goal>
 								</goals>
