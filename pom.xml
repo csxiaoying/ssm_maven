@@ -313,7 +313,8 @@
 								<goals>
 									<goal>prepare-agent-integration</goal>
 								</goals>
--->							</execution>
+							</execution>
+-->
 <!--
 							<execution>
 								<id>jacoco-site</id>
